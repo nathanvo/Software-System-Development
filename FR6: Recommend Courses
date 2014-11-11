@@ -1,0 +1,43 @@
+//TEST FILE
+
+//FR6: Recommend Courses
+//Time: 13 hours
+//Developer(s): Christopher Brown, Jamie McNeely, Nathan Vo, Jordan Hood
+//Syntax are not correct yet
+
+//1.Determines which previous courses taken matches up with catalog criteria.
+//RETURNS A TABLE OF NOT_TAKEN COURSES
+
+SELECT   	 DEPT_NUMBER, COURSE_NUMBER
+FROM   	 CATALOG, COURSE_TAKEN
+LEFT JOIN    COURSE_TAKEN ON CATALOG = COURSE_TAKEN
+WHERE   	 COURSE_TAKEN.COURSE_NUMBER is NULL;
+
+
+//2.Selects classes that have yet to be taken that fill in the degree requirements.
+//RETURNS A TABLE OF COURSES_NEEDED TABLE TO BE TAKEN TO FILL DEGREE REQ
+
+SELECT    	 DEPT_NUMBER, COURSE_NUMBER
+FROM   	 NOT_TAKEN, DEGREE_REQ
+LEFT JOIN     DEGREE_REQ ON NOT_TAKEN = DEGREE_REQ
+WHERE   	 DEGREE_REQ.COURSE_NUMBER is NULL;
+
+
+//3.If the prerequisite of a course has not been taken, the course with the
+//uncompleted prerequisite is taken off the compiling list.
+//Outputs constructed list of courses to student.
+//COMPARES COURSES_NEEDED TABLE WITH PREREQ TABLE, OUTPUTS NEEDED_PREREQ TABLE
+
+SELECT    	 DEPT_NUMBER, COURSE_NUMBER, PREREQ
+FROM   	 COURSE_NEEDED, PREREQ_TABLE
+LEFT JOIN     PREREQ_TABLE ON COURSE_NEEDED = PREREQ_TABLE
+WHERE   	 PREREQ_TABLE.PREREQ is NULL;
+
+
+//4. COMPARES NEEDED_PREREQ TABLE WITH COURSES TAKEN
+//OUTPUTS NEW COURSES_NEEDED TABLE
+
+SELECT    	 DEPT_NUMBER, COURSE_NUMBER
+FROM   	 NEEDED_PREREQ, COURSE_TAKEN
+LEFT JOIN     NEEDED_PREREQ ON COURSE_TAKEN = NEEDED_PREREQ
+WHERE   	 NEEDED_PREREQ.COURSE_NUMBER is NULL;
