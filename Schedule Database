@@ -1,0 +1,45 @@
+//SQL DATABASE
+//TABLES NEED:
+// 1) CATALOG	2) DEGREE REQUIREMENTS 3) DEGREE AUDIT
+
+//Starts by creating a database
+CREATE DATABASE my_schedule_db;
+
+//Creates Degree Req. Table
+CREATE TABLE Degree_Requirements
+(
+CourseID			int,
+CourseName 		varchar(255),
+CourseNumber 	int,
+Department 		varchar(255),
+Category				varchar(255)
+);
+
+INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
+VALUES (53,'IntroToProgramming',11111,'CS','Required');
+
+//Creates Catalog. Table
+CREATE TABLE Catalog
+(
+CourseID			int,
+CourseName 		varchar(255),
+CourseNumber 	int,
+Department 		varchar(255),
+Category				varchar(255)
+);
+
+INSERT INTO Catalog (CourseID,CourseName,CourseNumber,Department,Category)
+VALUES (53,'IntroToProgramming',11111,'CS','Required');
+
+
+CREATE TABLE Degree_Audit
+(
+CourseID			int,
+CourseName 		varchar(255),
+CourseNumber 	int,
+Department 		varchar(255),
+Category				varchar(255)
+);
+
+INSERT INTO Degree_Audit (CourseID,CourseName,CourseNumber,Department,Category)
+VALUES (53,'IntroToProgramming',11111,'CS','Required');
