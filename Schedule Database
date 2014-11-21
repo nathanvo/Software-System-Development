@@ -121,3 +121,24 @@ Category				varchar(255)
 
 INSERT INTO Degree_Audit (CourseID,CourseName,CourseNumber,Department,Category)
 VALUES (53,'Intro To Programming',11111,'CS','Required');
+
+
+CREATE TABLE Semester_Catalog
+(
+	CourseID	int,
+	CourseName	varchar(255),
+	CourseNumber	int,
+	Department	varchar(255),
+	Category	varchar(255),
+	
+	Section		char(1),
+	Instructor	varchar(255),
+	Location	varchar(255),
+	Start		Time,
+	End		Time,
+	Mon		boolean,
+	Tue		boolean,
+	Wed		boolean,
+	Thu		boolean,
+	Fri		boolean
+);
