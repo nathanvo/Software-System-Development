@@ -8,11 +8,11 @@ CREATE DATABASE my_schedule_db;
 //Creates Degree Req. Table
 CREATE TABLE Degree_Requirements
 (
-	CourseID			int,
-	CourseName 		varchar(255),
+	CourseID	int,
+	CourseName 	varchar(255),
 	CourseNumber 	int,
-	Department 		varchar(255),
-	Category			varchar(255)
+	Department 	varchar(255),
+	Category	varchar(255)
 );
 //Computer Science Req.
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
@@ -99,11 +99,11 @@ VALUES (24,'Phys II',11111,'Phys','Required');
 //Creates Catalog. Table
 CREATE TABLE Catalog
 (
-	CourseID			int,
-	CourseName 		varchar(255),
+	CourseID	int,
+	CourseName 	varchar(255),
 	CourseNumber 	int,
-	Department 		varchar(255),
-	Category			varchar(255)
+	Department 	varchar(255),
+	Category	varchar(255)
 );
 
 INSERT INTO Catalog (CourseID,CourseName,CourseNumber,Department,Category)
@@ -112,11 +112,11 @@ VALUES (53,'Intro To Programming',11111,'CS','Required');
 
 CREATE TABLE Degree_Audit
 (
-	CourseID			int,
-	CourseName 		varchar(255),
+	CourseID	int,
+	CourseName 	varchar(255),
 	CourseNumber 	int,
-	Department 		varchar(255),
-	Category			varchar(255)
+	Department 	varchar(255),
+	Category	varchar(255)
 );
 
 INSERT INTO Degree_Audit (CourseID,CourseName,CourseNumber,Department,Category)
