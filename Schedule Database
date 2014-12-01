@@ -142,3 +142,72 @@ CREATE TABLE Semester_Catalog
 	Thu		boolean,
 	Fri		boolean
 );
+
+
+//CATALOG # AND COURSE TITLE CREDIT CLASS# CMP SEC DAY TIME BLDG ROOM INSTRUCTOR
+CREATE TABLE Semester_Catalog
+(
+	CATALOG#	int,
+	COURSE_TITLE	varchar(255),
+	CREDIT		int,
+	CLASS#		varchar(255),
+	CMP		varchar(255),
+	SEC		varchar(255),
+	DAY		varchar(255),
+	TIME		varchar(255),
+	BLDG		varchar(255),
+	ROOM		varchar(255),
+	INSTRUCTOR	varchar(255)
+);
+//DEPT Aerosp Studies-Air Force ROTC
+INSERT INTO Semester_Catalog(CATALOG#,COURSE_TITLE,CREDIT,CLASS#,CMP,SEC,DAY,TIME,BLDG,ROOM,INSTRUCTOR)
+VALUES (1120,'Foundations Of The U.S. Air Force II','1.0- 1.0','-','LEC','1A','W','10:00 - 10:50 am','HARR','00208','Chronister,B');
+VALUES (1120,'Foundations Of The U.S. Air Force II','1.0- 1.0','-','LEC','1B','W','02:00 - 02:50 am','HARR','00208','Chronister,B');
+VALUES (1120,'Foundations Of The U.S. Air Force II','1.0- 1.0','70038','LAB','3A','Th','03:00 - 05:00 am','BCH','00120','Chronister,B');
+VALUES (1120,'Foundations Of The U.S. Air Force II','1.0- 1.0','70040','LAB','3B','Th','03:30 - 05:30 am','H-SS','000G5','Chronister,B');
+
+//For better organization
+VALUES (
+2120 	The Evolution Of USAF Air And Space Power II	1.0- 1.0 	LEC 1A W 11:00 - 11:50 am HARR 00208 Seabough,B
+							1.0- 1.0 	LEC 1B W 03:00 - 03:50 pm HARR 00208 Seabough,B
+ 							1.0- 1.0 70042 	LAB 3A Th 03:00 - 05:00 pm BCH 00120 Chronister,B
+ 							1.0- 1.0 71820 	LAB 3B Th 03:00 - 05:00 pm BCH 00120 Chronister,B
+);
+
+VALUES (
+3120 	Air Force Leadership Studies II 		3.0- 3.0 	LEC 1A T 03:00 - 05:30 pm HARR 00208 Chronister,B
+ 							3.0- 3.0 70044 	LAB 3A Th 03:00 - 05:00 pm BCH 00120 Chronister,B
+);
+VALUES (
+4120 	National Security Affairs/Preparation 
+	For Active Duty II
+							3.0- 3.0 	LEC 1A T 05:30 - 08:00 pm HARR 00302 Sowa,M
+ 							3.0- 3.0 70046 	LAB 3A Th 03:00 - 05:00 pm BCH 00120 Chronister,B
+);
+
+//DEPT Aerospace Engineering
+VALUES (
+2360 	Dynamics
+	Prerequisite: Grade of "C" or better in
+	each of Civ Eng 2200, Math 2222.
+	(Co-listed with Mech Eng 2360)
+ 							3.0- 3.0 71213 LEC 1A MWF 08:00 - 08:50 am TMH 00199 Christensen,K
+ 							3.0- 3.0 71211 LEC 1B MWF 09:00 - 09:50 am TMH 00254 Macsithigh,G
+							3.0- 3.0 71214 LEC 1C TTh 12:30 - 01:45 pm TMH 00295 Kumar,N
+);
+
+VALUES (
+2780 	Introduction To Aerospace Design
+	Prerequisite: A grade of "C" or better
+	in Aero Eng 2861.
+ 							2.0- 2.0 LEC 1A Th 08:00 - 08:50 am H-SS 000G5
+ 							2.0- 2.0 70001 LAB 3A MWF 02:00 - 03:50 pm ARR
+ 							2.0- 2.0 70002 LAB 3B TTh 02:00 - 03:50 pm ARR
+ );
+ 
+ VALUES (
+ 2861 	Aerospace Vehicle Performance
+	Prerequisite: "C" or better grade in
+	both Math 1215 and Physics 1135.
+ 							3.0- 3.0 71631 LEC 1A MWF 08:00 - 08:50 am MCNT 00204 Riggins,D
+);
