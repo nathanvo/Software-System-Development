@@ -16,59 +16,39 @@ CREATE TABLE Degree_Requirements
 );
 //Computer Science Req.
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (001,'Intro To Computer Science',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (53,'Intro To Programming',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (54,'Intro To Programming Lab',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (128,'Discrete Mathematics For Computer Science',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (153,'Data Structures',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (284,'Intro to Operating Systems',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (253,'Algorithm',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (206,'Software Engineering I',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (228,'Intro To Numerical Methods',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (220,'Theory of Computer Science',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (256,'Programming Languages And Translators',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (238,'Files Structures And Intro to Database Systems',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (397,'Software System Development I',11111,'CS','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (300,'Computer Science Elective',11111,'CS','Elective');
+VALUES (001,'Intro To Computer Science',11111,'CS','Required'),
+(53,'Intro To Programming',11111,'CS','Required'),
+(54,'Intro To Programming Lab',11111,'CS','Required'),
+(128,'Discrete Mathematics For Computer Science',11111,'CS','Required'),
+(153,'Data Structures',11111,'CS','Required'),
+(284,'Intro to Operating Systems',11111,'CS','Required'),
+(253,'Algorithm',11111,'CS','Required'),
+(206,'Software Engineering I',11111,'CS','Required'),
+(228,'Intro To Numerical Methods',11111,'CS','Required'),
+(220,'Theory of Computer Science',11111,'CS','Required'),
+(256,'Programming Languages And Translators',11111,'CS','Required'),
+(238,'Files Structures And Intro to Database Systems',11111,'CS','Required'),
+(397,'Software System Development I',11111,'CS','Required'),
+(300,'Computer Science Elective',11111,'CS','Elective');
 
 //Computer Engineering Req.
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (111,'Intro To Computer Engineering',11111,'CmpE','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (213,'Digital Systems Design',11111,'CmpE','Required');
+VALUES (111,'Intro To Computer Engineering',11111,'CmpE','Required'),
+(213,'Digital Systems Design',11111,'CmpE','Required');
 
 //Mathematics/Statistics
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (8,'Calculus I',11111,'Math','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (21,'Calculus II',11111,'Math','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (203,'Linear Algebra',11111,'Math','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (215,'Statistics',11111,'Statistic','Required');
+VALUES (8,'Calculus I',11111,'Math','Required'),
+(21,'Calculus II',11111,'Math','Required'),
+(203,'Linear Algebra',11111,'Math','Required'),
+(215,'Statistics',11111,'Statistic','Required');
 
 //English/Literature/Speech
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (20,'English I',11111,'Eng','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (60,'English I',11111,'Eng','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (85,'Speech',11111,'Eng','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (12345,'Literature Elective',11111,'Lit','Elective');
+VALUES (20,'English I',11111,'Eng','Required'),
+(60,'English I',11111,'Eng','Required'),
+(85,'Speech',11111,'Eng','Required'),
+(12345,'Literature Elective',11111,'Lit','Elective');
 
 //Constitutional Requirement
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
@@ -76,11 +56,9 @@ VALUES (90,'Political Science',11111,'Pol','Required');
 
 //Humanities & Social Science Electives
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (12345,'Humanity Elective',11111,'Hum','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (12345,'Social Science Elective',11111,'Hum','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (12345,'Ethics Elective',11111,'Hum','Required');
+VALUES (12345,'Humanity Elective',11111,'Hum','Required'),
+(12345,'Social Science Elective',11111,'Hum','Required'),
+(12345,'Ethics Elective',11111,'Hum','Required');
 
 //Lab Science Elective
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
@@ -88,28 +66,18 @@ VALUES (12345,'Science Lecture/Lab pair',11111,'Sci','Required');
 
 //Physics Req.
 INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (23,'Physics I',11111,'Phys','Required');
-INSERT INTO Degree_Requirements (CourseID,CourseName,CourseNumber,Department,Category)
-VALUES (24,'Phys II',11111,'Phys','Required');
+VALUES (23,'Physics I',11111,'Phys','Required'),
+(24,'Phys II',11111,'Phys','Required');
 
 //Computer Science/Engineering associated Elective = 9 hrs
 //Free Electives = 4-10 hrs
 //TOTAL 128 credit hrs to graduate
 
-//Creates Catalog. Table
-CREATE TABLE Catalog
-(
-	CourseID	int,
-	CourseName 	varchar(255),
-	CourseNumber 	int,
-	Department 	varchar(255),
-	Category	varchar(255)
-);
 
 INSERT INTO Catalog (CourseID,CourseName,CourseNumber,Department,Category)
 VALUES (53,'Intro To Programming',11111,'CS','Required');
 
-
+//Going to use a example Audit
 CREATE TABLE Degree_Audit
 (
 	CourseID	int,
@@ -880,28 +848,3 @@ INSERT INTO Semester_Catalog (Department, CourseNumber, CourseName, SectionLette
 ("Technical Communication","4410","Theory and Practice of Technical","1A","14:00:00","15:15:00","CSF","Northcut,K","false","true","false","true","false"),
 ("Technical Communication","4520","Help Authoring","1A","11:00:00","12:15:00","H-SS","Wright,D","false","true","false","true","false"),
 ("Technical Communication","6600","Foundations of Technical Communication ","1A","12:30:00","13:45:00","H-SS","Wright,D","false","false","false","true","false");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
